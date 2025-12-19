@@ -1,0 +1,5 @@
+[
+  { "id": 1, "type": "cliente_vip" },
+  { "id": 2, "type": "cliente_normal" },
+  { "id": 3, "type": "cliente_teste" }
+]

@@ -1,0 +1,20 @@
+{
+  "name": "pgats-automacao-web",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": {
+  "cy:run": "cypress run --reporter cypress-mochawesome-reporter",
+  "posttest": "npx mochawesome-merge \"reports/jsons/*.json\" -o reports/report.json && npx marge reports/report.json -f report -o reports/html",
+  "test": "npm run cy:run"
+}
+,
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@faker-js/faker": "^9.9.0",
+    "cypress": "^13.7.3",
+    "cypress-mochawesome-reporter": "^4.0.2"
+  }
+}
